@@ -15,7 +15,7 @@ Custom [Morphe](https://github.com/MorpheApp) patches for **DB Navigator** (`de.
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [AMOLED dark mode](#amoled-dark-mode) | Replaces dark background colors in night mode with pure black (#FF000000). |  |
+| [AMOLED dark mode](#amoled-dark-mode) | Replaces dark background colors in night mode with black (#FF000000). |  |
 | [Disable Adjust tracking](#disable-adjust-tracking) | Prevents the Adjust analytics SDK from initializing in DB Navigator. |  |
 | [Disable Instana tracking](#disable-instana-tracking) | Prevents the Instana monitoring and telemetry SDK from initializing in DB Navigator. |  |
 | [Disable Optimizely A/B testing](#disable-optimizely-a-b-testing) | Prevents the Optimizely SDK from initializing in DB Navigator. |  |
