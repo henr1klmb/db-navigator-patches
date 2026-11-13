@@ -8,7 +8,7 @@ private const val HELPER = "Lio/github/henr1klmb/patches/shared/WebViewHelper;"
 @Suppress("unused")
 val disableAdsPatch = patch(
     name = "Disable ads",
-    description = "Blocks popup windows and ad elements in NetMirror.",
+    description = "Blocks popup windows and ad elements.",
 ) {
     compatibleWith(NETMIRROR_COMPATIBILITY)
 

@@ -9,7 +9,7 @@ import java.io.File
 @Suppress("unused")
 val customIconPatch = patch(
     name = "Custom icon",
-    description = "Changes the app name and optionally replaces the launcher icons of NetMirror.",
+    description = "Changes the app name and optionally replaces the launcher icon.",
 ) {
     compatibleWith(NETMIRROR_COMPATIBILITY)
 

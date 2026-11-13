@@ -6,7 +6,7 @@ import app.morphe.patcher.patch.patch
 @Suppress("unused")
 val enableScreenshotsPatch = patch(
     name = "Enable screenshots",
-    description = "Removes the FLAG_SECURE window flag in DB Navigator to allow taking screenshots and screen recordings.",
+    description = "Allow taking screenshots and screen recordings.",
 ) {
     compatibleWith(DB_NAVIGATOR_COMPATIBILITY)
 

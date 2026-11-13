@@ -10,7 +10,7 @@ private const val HELPER = "Lio/github/henr1klmb/patches/shared/WebViewHelper;"
 @Suppress("unused")
 val disableAdsPatch = patch(
     name = "Disable ads",
-    description = "Blocks Wegfinder promotion banners, TRM marketing banners, and other ads.",
+    description = "Blocks Wegfinder ad, marketing banners and others.",
 ) {
     compatibleWith(OEBB_COMPATIBILITY)
 

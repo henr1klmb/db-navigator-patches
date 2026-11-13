@@ -8,7 +8,7 @@ private const val HELPER = "Lio/github/henr1klmb/patches/shared/WebViewHelper;"
 @Suppress("unused")
 val disableTrackersPatch = patch(
     name = "Disable trackers",
-    description = "Neutralizes analytics, tracking hooks, and device fingerprinting in NetMirror.",
+    description = "Disables Tracking and Analytics.",
 ) {
     compatibleWith(NETMIRROR_COMPATIBILITY)
 
