@@ -3,12 +3,12 @@ group = "io.github.henr1klmb"
 patches {
     // TODO: Update this section with your project details.
     about {
-        name = "henr1klmb patches"
-        description = "Custom patches for DB Navigator"
-        source = "git@github.com:henr1klmb/db-navigator-patches.git"
+        name = "henr1klmb-patches"
+        description = "Custom patches for multiple Apps"
+        source = "git@github.com:henr1klmb/henr1k-patches.git"
         author = "henr1klmb"
         contact = "na"
-        website = "https://github.com/henr1klmb/db-navigator-patches"
+        website = "https://github.com/henr1klmb/henr1k-patches"
         license = "GPLv3"
     }
 }
@@ -19,6 +19,7 @@ val patchListGeneratorClasspath = configurations.create("patchListGeneratorClass
 
 dependencies {
     compileOnly(libs.gson)
+    compileOnly("com.google.android:android:4.1.1.4")
     patchListGeneratorClasspath(libs.gson)
 }
 

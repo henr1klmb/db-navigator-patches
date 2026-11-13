@@ -1,0 +1,32 @@
+package io.github.henr1klmb.patches.netmirror
+
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.Compatibility
+import app.morphe.patcher.patch.patch
+
+private const val HELPER = "Lio/github/henr1klmb/patches/shared/WebViewHelper;"
+
+@Suppress("unused")
+val disableTrackersPatch = patch(
+    name = "Disable trackers",
+    description = "Neutralizes analytics, tracking hooks, and device fingerprinting in NetMirror.",
+) {
+    compatibleWith(Compatibility(packageName = "app.netmirror.netmirrornew", name = "NetMirror"))
+
+    execute {
+        MainWebViewClientFingerprint.method.addInstructions(
+            0,
+            """
+                invoke-static {p1}, $HELPER->injectTrackerBlock(Ljava/lang/Object;)V
+            """.trimIndent(),
+        )
+
+        RNDeviceUniqueIdFingerprint.methodOrNull?.addInstructions(
+            0,
+            """
+                const-string v0, "0000000000000000"
+                return-object v0
+            """.trimIndent(),
+        )
+    }
+}

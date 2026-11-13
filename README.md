@@ -1,12 +1,12 @@
-# DB Navigator Patches
+# henr1k patches
 
-Custom [Morphe](https://github.com/MorpheApp) patches for **DB Navigator** (`de.hafas.android.db`) focused on privacy, AMOLED Integration and Screenshot Fix
+Custom [Morphe](https://github.com/MorpheApp) patches for multiple Apps
 
 ---
 
 ## Included Patches
 <!-- PATCHES_START -->
-> **[v1.0.1](https://github.com/henr1klmb/db-navigator-patches/releases/tag/v1.0.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;7 patches total
+> **[v1.1.0-dev.2](https://github.com/henr1klmb/henr1k-patches/releases/tag/v1.1.0-dev.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;10 patches total
 <details open>
 <summary>📦 DB Navigator&nbsp;&nbsp;•&nbsp;&nbsp;7 patches</summary>
 <br>
@@ -22,6 +22,20 @@ Custom [Morphe](https://github.com/MorpheApp) patches for **DB Navigator** (`de.
 | [Disable Qualtrics tracking](#disable-qualtrics-tracking) | Prevents the Qualtrics SDK from initializing in DB Navigator. |  |
 | [Disable Tealium tracking](#disable-tealium-tracking) | Prevents the Tealium analytics SDK from initializing in DB Navigator. |  |
 | [Enable screenshots](#enable-screenshots) | Removes the FLAG_SECURE window flag in DB Navigator to allow taking screenshots and screen recordings. |  |
+
+</details>
+
+<details open>
+<summary>📦 NetMirror&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
+<br>
+
+**Package name:** `app.netmirror.netmirrornew`
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Custom icon](#custom-icon) | Changes the app name and optionally replaces the launcher icons of NetMirror. | • App name<br>• Custom icon PNG path (optional) |
+| [Disable ads](#disable-ads) | Blocks popup windows and ad elements in NetMirror. |  |
+| [Disable trackers](#disable-trackers) | Neutralizes analytics, tracking hooks, and device fingerprinting in NetMirror. |  |
 
 </details>
 

@@ -133,3 +133,10 @@ node_modules/
 .idea/
 local.properties
 decompiled/
+
+# Ignore Tools
+tools/
+*.apk
+*.apkm
+*.xapk
+*.mpp
