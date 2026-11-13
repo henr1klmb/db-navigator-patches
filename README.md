@@ -6,15 +6,25 @@ Custom [Morphe](https://github.com/MorpheApp) patches for **DB Navigator** (`de.
 
 ## Included Patches
 <!-- PATCHES_START -->
-| Patch Name | Category | Description |
-| :--- | :--- | :--- |
-| **Disable Tealium tracking** | Privacy | Prevents the Tealium analytics SDK from initializing. |
-| **Disable Adjust tracking** | Privacy | Blocks Adjust attribution and device fingerprinting on startup. |
-| **Disable Qualtrics tracking** | Privacy | Disables Qualtrics telemetry and in-app feedback survey popups. |
-| **Disable Optimizely tracking** | Privacy | Prevents Optimizely A/B testing and experimentation tracking. |
-| **Disable Instana tracking** | Privacy | Stops Instana performance and session monitoring. |
-| **AMOLED dark mode** | Appearance | Replaces dark gray night-mode surfaces with pure `#000000` black. |
-| **Enable screenshots** | Usability | Removes `FLAG_SECURE` restrictions so screenshots work everywhere. |
+> **[v1.0.0-dev.1](https://github.com/henr1klmb/db-navigator-patches/releases/tag/v1.0.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;7 patches total
+<details open>
+<summary>📦 DB Navigator&nbsp;&nbsp;•&nbsp;&nbsp;7 patches</summary>
+<br>
+
+**Package name:** `de.hafas.android.db`
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [AMOLED dark mode](#amoled-dark-mode) | Replaces dark background colors in night mode with pure black (#FF000000). |  |
+| [Disable Adjust tracking](#disable-adjust-tracking) | Prevents the Adjust analytics SDK from initializing in DB Navigator. |  |
+| [Disable Instana tracking](#disable-instana-tracking) | Prevents the Instana monitoring and telemetry SDK from initializing in DB Navigator. |  |
+| [Disable Optimizely A/B testing](#disable-optimizely-a-b-testing) | Prevents the Optimizely SDK from initializing in DB Navigator. |  |
+| [Disable Qualtrics tracking](#disable-qualtrics-tracking) | Prevents the Qualtrics SDK from initializing in DB Navigator. |  |
+| [Disable Tealium tracking](#disable-tealium-tracking) | Prevents the Tealium analytics SDK from initializing in DB Navigator. |  |
+| [Enable screenshots](#enable-screenshots) | Removes the FLAG_SECURE window flag in DB Navigator to allow taking screenshots and screen recordings. |  |
+
+</details>
+
 <!-- PATCHES_END -->
 ---
 
