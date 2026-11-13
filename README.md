@@ -1,6 +1,6 @@
-# DB Navigator Patches
+# henr1k patches
 
-Custom [Morphe](https://github.com/MorpheApp) patches for **DB Navigator** (`de.hafas.android.db`) focused on privacy, AMOLED Integration and Screenshot Fix
+Custom [Morphe](https://github.com/MorpheApp) patches for multiple Apps
 
 ---
 
@@ -46,4 +46,4 @@ Custom [Morphe](https://github.com/MorpheApp) patches for **DB Navigator** (`de.
 
 1. Add this repository URL as a patch source in **Morphe Manager**:
    ```text
-   https://github.com/henr1klmb/db-navigator-patches
+   https://github.com/henr1klmb/henr1k-patches
