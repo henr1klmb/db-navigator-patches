@@ -1,0 +1,64 @@
+package io.github.henr1klmb.patches.oebb
+
+import app.morphe.patcher.Fingerprint
+
+// Tracking Fingerprints
+
+internal object WebbugTryEnableTrackingFingerprint : Fingerprint(
+    returnType = "V",
+    parameters = listOf("Landroid/content/Context;"),
+    strings = listOf("Mismatch: No. of configured trackers != no. of mapping configs! No trackers initialized!"),
+)
+
+internal object HafasTrackingConsentFingerprint : Fingerprint(
+    returnType = "Z",
+    parameters = emptyList(),
+    strings = listOf("tracking", "TRACKING_ENABLED_DEFAULT"),
+)
+
+internal object PiwikTrackEventFingerprint : Fingerprint(
+    returnType = "V",
+    parameters = listOf("Lde/hafas/tracking/data/TrackingEntry;"),
+    strings = listOf("dimensionId should be great than 0 (arg: %d)"),
+)
+
+internal object PiwikTrackScreenFingerprint : Fingerprint(
+    returnType = "V",
+    parameters = listOf("Lde/hafas/tracking/data/TrackingEntry;"),
+    strings = listOf("Screen tracking requires a non-empty path"),
+)
+
+internal object MatomoInstallReferrerFingerprint : Fingerprint(
+    definingClass = "Lorg/matomo/sdk/extra/InstallReferrerReceiver;",
+    name = "onReceive",
+    returnType = "V",
+    parameters = listOf("Landroid/content/Context;", "Landroid/content/Intent;"),
+)
+
+// Ads & WebView Fingerprints
+
+internal object HafasWebViewClientFingerprint : Fingerprint(
+    name = "shouldOverrideUrlLoading",
+    returnType = "Z",
+    parameters = listOf("Landroid/webkit/WebView;", "Ljava/lang/String;"),
+    superclass = "Landroid/webkit/WebViewClient;",
+)
+
+internal object OebbDrawerAdFingerprint : Fingerprint(
+    name = "updateOebbAdView",
+    returnType = "V",
+    parameters = emptyList(),
+    strings = listOf("ch.swift.willi"),
+)
+
+internal object ShowTrmBannersFingerprint : Fingerprint(
+    returnType = "V",
+    parameters = listOf("Landroid/app/Activity;"),
+    strings = listOf("topPlaceholder", "bottomPlaceholder", "loyaltyPlaceholder"),
+)
+
+internal object OebbAdClickHandlerFingerprint : Fingerprint(
+    returnType = "V",
+    parameters = listOf("Landroid/content/Context;"),
+    strings = listOf("https://wegfinder.app/scotty", "oebb-banner-ad"),
+)

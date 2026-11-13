@@ -33,9 +33,9 @@ Custom [Morphe](https://github.com/MorpheApp) patches for multiple Apps
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [Custom icon](#custom-icon) | Changes the app name and optionally replaces the launcher icons of NetMirror. | • App name<br>• Custom icon PNG path (optional) |
-| [Disable ads](#disable-ads) | Blocks popup windows and ad elements in NetMirror. |  |
-| [Disable trackers](#disable-trackers) | Neutralizes analytics, tracking hooks, and device fingerprinting in NetMirror. |  |
+| [Custom icon](#custom-icon) | Ability to change App Name and Icon. | • App name<br>• Custom icon PNG path (optional) |
+| [Disable ads](#disable-ads) | Disables Ads. |  |
+| [Disable trackers](#disable-trackers) | Disables Tracking and Analytics. |  |
 
 </details>
 
