@@ -1,7 +1,6 @@
 package io.github.henr1klmb.patches.netmirror
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
-import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.patch
 
 private const val HELPER = "Lio/github/henr1klmb/patches/shared/WebViewHelper;"
@@ -11,7 +10,7 @@ val disableAdsPatch = patch(
     name = "Disable ads",
     description = "Blocks popup windows and ad elements in NetMirror.",
 ) {
-    compatibleWith(Compatibility(packageName = "app.netmirror.netmirrornew", name = "NetMirror"))
+    compatibleWith(NETMIRROR_COMPATIBILITY)
 
     execute {
         PopupWebViewClientFingerprint.method.addInstructions(

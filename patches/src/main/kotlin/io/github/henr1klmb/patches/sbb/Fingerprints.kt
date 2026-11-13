@@ -1,7 +1,15 @@
 package io.github.henr1klmb.patches.sbb
 
 import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.patch.AppTarget
+import app.morphe.patcher.patch.Compatibility
 import com.android.tools.smali.dexlib2.Opcode
+
+internal val SBB_COMPATIBILITY = Compatibility(
+    packageName = "ch.sbb.mobile.android.b2c",
+    name = "SBB Mobile",
+    targets = listOf(AppTarget("12.27.0.87.master")),
+)
 
 // Screenshots Fingerprints
 

@@ -1,6 +1,14 @@
 package io.github.henr1klmb.patches.oebb
 
 import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.patch.AppTarget
+import app.morphe.patcher.patch.Compatibility
+
+internal val OEBB_COMPATIBILITY = Compatibility(
+    packageName = "de.hafas.android.oebb",
+    name = "ÖBB Scotty",
+    targets = listOf(AppTarget("9.0.5 (72)")),
+)
 
 // Tracking Fingerprints
 
@@ -61,4 +69,15 @@ internal object OebbAdClickHandlerFingerprint : Fingerprint(
     returnType = "V",
     parameters = listOf("Landroid/content/Context;"),
     strings = listOf("https://wegfinder.app/scotty", "oebb-banner-ad"),
+)
+
+internal object OebbConnectionOverviewAdFingerprint : Fingerprint(
+    returnType = "Landroidx/recyclerview/widget/RecyclerView\$e0;",
+    parameters = listOf("Landroid/view/ViewGroup;", "I"),
+    strings = listOf("oebbAdView", "WAYFINDER_AD_ENABLED"),
+)
+
+internal object OebbMapStyleFingerprint : Fingerprint(
+    parameters = emptyList(),
+    strings = listOf("MAP_STYLE", "GOOGLE"),
 )

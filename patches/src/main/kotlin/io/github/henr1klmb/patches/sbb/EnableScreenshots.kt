@@ -1,7 +1,6 @@
 package io.github.henr1klmb.patches.sbb
 
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.patch
 import com.android.tools.smali.dexlib2.Opcode
 
@@ -10,7 +9,7 @@ val enableScreenshotsPatch = patch(
     name = "Enable screenshots",
     description = "Allows taking screenshots and screen recordings.",
 ) {
-    compatibleWith(Compatibility(packageName = "ch.sbb.mobile.android.b2c", name = "SBB Mobile"))
+    compatibleWith(SBB_COMPATIBILITY)
 
     execute {
         val method = DatatransSecureDialogFingerprint.method

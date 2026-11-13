@@ -18,7 +18,7 @@
           "formFactor": "MOBILE",
           "targets": [
             {
-              "version": null,
+              "version": "26.20.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -118,7 +118,7 @@
           "formFactor": "MOBILE",
           "targets": [
             {
-              "version": null,
+              "version": "9.0.5 (72)",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -145,7 +145,7 @@
           "formFactor": "MOBILE",
           "targets": [
             {
-              "version": null,
+              "version": "12.27.0.87.master",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -199,7 +199,7 @@
           "formFactor": "MOBILE",
           "targets": [
             {
-              "version": null,
+              "version": "26.20.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -226,7 +226,7 @@
           "formFactor": "MOBILE",
           "targets": [
             {
-              "version": null,
+              "version": "9.0.5 (72)",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -253,7 +253,7 @@
           "formFactor": "MOBILE",
           "targets": [
             {
-              "version": null,
+              "version": "12.27.0.87.master",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -280,7 +280,7 @@
           "formFactor": "MOBILE",
           "targets": [
             {
-              "version": null,
+              "version": "26.20.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -307,7 +307,34 @@
           "formFactor": "MOBILE",
           "targets": [
             {
-              "version": null,
+              "version": "12.27.0.87.master",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Fix map loading",
+      "description": "Switches the map engine from Google Maps to OpenStreetMap (HAFAS tiles) to resolve blank maps on re-signed APKs.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "de.hafas.android.oebb",
+          "name": "ÖBB Scotty",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": null,
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "9.0.5 (72)",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,

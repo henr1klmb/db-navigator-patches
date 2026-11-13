@@ -1,7 +1,6 @@
 package io.github.henr1klmb.patches.sbb
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
-import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.patch
 
 private const val HELPER = "Lio/github/henr1klmb/patches/shared/WebViewHelper;"
@@ -11,7 +10,7 @@ val disableTrackingPatch = patch(
     name = "Disable tracking",
     description = "Disables Tracking and Analytics.",
 ) {
-    compatibleWith(Compatibility(packageName = "ch.sbb.mobile.android.b2c", name = "SBB Mobile"))
+    compatibleWith(SBB_COMPATIBILITY)
 
     execute {
         // Disable Piano Analytics / AT Internet screen tracking

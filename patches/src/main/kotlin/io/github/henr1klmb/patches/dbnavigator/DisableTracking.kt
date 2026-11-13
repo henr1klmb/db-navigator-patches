@@ -1,7 +1,6 @@
 package io.github.henr1klmb.patches.dbnavigator
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
-import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.patch
 
 @Suppress("unused")
@@ -9,7 +8,7 @@ val disableTrackingPatch = patch(
     name = "Disable tracking",
     description = "Disables Tracking and Analytics.",
 ) {
-    compatibleWith(Compatibility(packageName = "de.hafas.android.db", name = "DB Navigator"))
+    compatibleWith(DB_NAVIGATOR_COMPATIBILITY)
 
     execute {
         AdjustInitFingerprint.method.addInstructions(

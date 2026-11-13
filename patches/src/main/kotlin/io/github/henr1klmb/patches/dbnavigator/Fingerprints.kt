@@ -1,6 +1,14 @@
 package io.github.henr1klmb.patches.dbnavigator
 
 import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.patch.AppTarget
+import app.morphe.patcher.patch.Compatibility
+
+internal val DB_NAVIGATOR_COMPATIBILITY = Compatibility(
+    packageName = "de.hafas.android.db",
+    name = "DB Navigator",
+    targets = listOf(AppTarget("26.20.0")),
+)
 
 internal object TealiumInitFingerprint : Fingerprint(
     returnType = "V",
