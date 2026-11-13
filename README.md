@@ -80,6 +80,18 @@ Custom [Morphe](https://github.com/MorpheApp) patches for multiple Apps
 
 <!-- PATCHES_END -->
 ---
+## Planned Patches / Work in progress
+- [ ] **Comaprify** (`com.akshat.comparify`) – Disable ads & tracking
+- [ ] **BookMyShow** (`com.bt.bms`) – AMOLED dark mode, disable ads & telemetry, hide Lounge & Live Events tabs
+- [ ] **Reddit** (`com.reddit.frontpage`) – Auto-collapse/hide AutoModerator comments
+- [ ] **mobile.de** (`de.mobile.android.app`) – Disable ads, sponsored listings, tracking & AI features
+- [ ] **ITVX** (`air.ITVMobilePlayer`) - Disable ads, focus on video ads
+- [ ] **Channel 4** (`com.channel4.ondemand`) - Disable ads, focus on video ads
+- [ ] **U** (`uk.co.uktv.dave`) - Disable ads, focus on video ads
+- [ ] **mydealz** (`com.tippingcanoe.mydealz`) – Hide sponsored deals & pop-ups, disable tracking
+
+No unlock/premium patches planned currently!
+Feel free to suggest a patch.
 
 ## Installation
 
