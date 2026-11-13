@@ -1,14 +1,14 @@
-group = "app.template"
+group = "io.github.henr1klmb"
 
 patches {
     // TODO: Update this section with your project details.
     about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
+        name = "henr1klmb patches"
+        description = "Custom patches for DB Navigator"
+        source = "git@github.com:henr1klmb/db-navigator-patches.git"
+        author = "henr1klmb"
         contact = "na"
-        website = "na"
+        website = "https://github.com/henr1klmb/db-navigator-patches"
         license = "GPLv3"
     }
 }
