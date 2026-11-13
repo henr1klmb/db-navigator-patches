@@ -1,3 +1,9 @@
+## [1.2.0-dev.2](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.1...v1.2.0-dev.2) (2026-11-13)
+
+### ✨ New Features
+
+* added app compatibilities, improved ÖBB ad blocking and switch from Google Maps to OpenStreetMap ([f8d0426](https://github.com/henr1klmb/henr1k-patches/commit/f8d04265f89ff73175326fa85a5a1cdc96993c0e))
+
 ## [1.2.0-dev.1](https://github.com/henr1klmb/henr1k-patches/compare/v1.1.0...v1.2.0-dev.1) (2026-11-13)
 
 ### ✨ New Features
