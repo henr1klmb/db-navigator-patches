@@ -6,7 +6,7 @@ Custom [Morphe](https://github.com/MorpheApp) patches for **DB Navigator** (`de.
 
 ## Included Patches
 <!-- PATCHES_START -->
-> **[v1.0.0](https://github.com/henr1klmb/db-navigator-patches/releases/tag/v1.0.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;8 patches total
+> **[v1.0.1](https://github.com/henr1klmb/db-navigator-patches/releases/tag/v1.0.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;7 patches total
 <details open>
 <summary>📦 DB Navigator&nbsp;&nbsp;•&nbsp;&nbsp;7 patches</summary>
 <br>
@@ -22,23 +22,6 @@ Custom [Morphe](https://github.com/MorpheApp) patches for **DB Navigator** (`de.
 | [Disable Qualtrics tracking](#disable-qualtrics-tracking) | Prevents the Qualtrics SDK from initializing in DB Navigator. |  |
 | [Disable Tealium tracking](#disable-tealium-tracking) | Prevents the Tealium analytics SDK from initializing in DB Navigator. |  |
 | [Enable screenshots](#enable-screenshots) | Removes the FLAG_SECURE window flag in DB Navigator to allow taking screenshots and screen recordings. |  |
-
-</details>
-
-<details open>
-<summary>📦 XYZ app&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
-<br>
-
-**Package name:** `com.example.app`
-
-**🎯 Supported versions:**
-
-| 2.0.0 | 1.0.2 |
-| :---: | :---: |
-
-| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
-|----------|----------------|-----------|
-| [Example Patch](#example-patch) | Example patch to start with. |  |
 
 </details>
 
