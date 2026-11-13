@@ -1,3 +1,9 @@
+## [1.1.0-dev.1](https://github.com/henr1klmb/henr1k-patches/compare/v1.0.1...v1.1.0-dev.1) (2026-11-13)
+
+### ✨ New Features
+
+* **netmirror:** add ad blocker, tracker blocker and custom icon patches ([efca552](https://github.com/henr1klmb/henr1k-patches/commit/efca552b1ba303aa44474c11e876ec2ef28f6e28))
+
 ## [1.0.1](https://github.com/henr1klmb/db-navigator-patches/compare/v1.0.0...v1.0.1) (2026-11-13)
 
 ### 🐛 Bug Fixes
