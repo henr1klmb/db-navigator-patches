@@ -1,3 +1,9 @@
+## [1.2.0-dev.1](https://github.com/henr1klmb/henr1k-patches/compare/v1.1.0...v1.2.0-dev.1) (2026-11-13)
+
+### ✨ New Features
+
+* add ÖBB Scotty and SBB Mobile patches and bundle DB Navigator trackers ([d27fd8a](https://github.com/henr1klmb/henr1k-patches/commit/d27fd8a5d839bcc0923eda4cf44010b6f09dfa3b))
+
 ## [1.1.0](https://github.com/henr1klmb/henr1k-patches/compare/v1.0.1...v1.1.0) (2026-11-13)
 
 ### ✨ New Features
