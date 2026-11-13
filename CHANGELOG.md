@@ -1,3 +1,13 @@
+## [1.1.0](https://github.com/henr1klmb/henr1k-patches/compare/v1.0.1...v1.1.0) (2026-11-13)
+
+### ✨ New Features
+
+* **netmirror:** add ad blocker, tracker blocker and custom icon patches ([efca552](https://github.com/henr1klmb/henr1k-patches/commit/efca552b1ba303aa44474c11e876ec2ef28f6e28))
+
+### 🐛 Bug Fixes
+
+* **build:** revert gradle wrapper to 9.8.2 and update README ([8ade59c](https://github.com/henr1klmb/henr1k-patches/commit/8ade59caea7758c2ad3d6c2618f3d25a0366eed8))
+
 ## [1.1.0-dev.2](https://github.com/henr1klmb/henr1k-patches/compare/v1.1.0-dev.1...v1.1.0-dev.2) (2026-11-13)
 
 ### 🐛 Bug Fixes
