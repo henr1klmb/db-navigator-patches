@@ -1,3 +1,9 @@
+## [1.2.0-dev.7](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.6...v1.2.0-dev.7) (2026-11-14)
+
+### 🐛 Bug Fixes
+
+* modified signature spoofing ([ab51204](https://github.com/henr1klmb/henr1k-patches/commit/ab51204b342a48179965d12531bbcccbfb21358a))
+
 ## [1.2.0-dev.6](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.5...v1.2.0-dev.6) (2026-11-14)
 
 ### ✨ New Features
