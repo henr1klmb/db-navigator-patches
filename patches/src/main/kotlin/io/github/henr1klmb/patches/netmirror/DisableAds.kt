@@ -2,6 +2,8 @@ package io.github.henr1klmb.patches.netmirror
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.patch
+import io.github.henr1klmb.patches.shared.clearBody
+import io.github.henr1klmb.patches.shared.ensureRegisters
 
 private const val HELPER = "Lio/github/henr1klmb/patches/shared/WebViewHelper;"
 
@@ -13,13 +15,17 @@ val disableAdsPatch = patch(
     compatibleWith(NETMIRROR_COMPATIBILITY)
 
     execute {
-        PopupWebViewClientFingerprint.method.addInstructions(
-            0,
-            """
-                const/4 v0, 0x1
-                return v0
-            """.trimIndent(),
-        )
+        PopupWebViewClientFingerprint.method.apply {
+            clearBody()
+            ensureRegisters(1)
+            addInstructions(
+                0,
+                """
+                    const/4 v0, 0x1
+                    return v0
+                """.trimIndent(),
+            )
+        }
 
         MainWebViewClientFingerprint.method.addInstructions(
             0,
