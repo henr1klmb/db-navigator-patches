@@ -1,8 +1,8 @@
 {
-  "created_at": "2026-11-13T23:55:32",
-  "description": "## [1.2.0-dev.3](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.2...v1.2.0-dev.3) (2026-11-13)\n\n### 🐛 Bug Fixes\n\n* possible fix ÖBB Scotty map tile loading and route crash ([af47c73](https://github.com/henr1klmb/henr1k-patches/commit/af47c73c23476ff607f35f4f9d2dd6d7171e22c1))",
-  "download_url": "https://github.com/henr1klmb/henr1k-patches/releases/download/v1.2.0-dev.3/patches-1.2.0-dev.3.mpp",
+  "created_at": "2026-11-14T00:37:56",
+  "description": "## [1.2.0-dev.4](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.3...v1.2.0-dev.4) (2026-11-14)\n\n### ✨ New Features\n\n* add signature spoofing and replace ÖBB map workaround ([ab83f32](https://github.com/henr1klmb/henr1k-patches/commit/ab83f32473168345d52430379a68f691369824d0))",
+  "download_url": "https://github.com/henr1klmb/henr1k-patches/releases/download/v1.2.0-dev.4/patches-1.2.0-dev.4.mpp",
   "signature_download_url": "",
-  "version": "1.2.0-dev.3",
+  "version": "1.2.0-dev.4",
   "public_key": "0ip1tBaXZxd81Acs0nutzwlA8SFXe78bLG0LbVGkcAU="
 }
