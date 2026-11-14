@@ -1,3 +1,9 @@
+## [1.2.0-dev.8](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.7...v1.2.0-dev.8) (2026-11-14)
+
+### ✨ New Features
+
+* **reddit:** add patch to hide AutoModerator comments by default ([5671828](https://github.com/henr1klmb/henr1k-patches/commit/567182895d9aba82eb56ead941696eb029394e03))
+
 ## [1.2.0-dev.7](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.6...v1.2.0-dev.7) (2026-11-14)
 
 ### 🐛 Bug Fixes
