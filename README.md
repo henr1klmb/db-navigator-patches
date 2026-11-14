@@ -22,7 +22,7 @@ Custom [Morphe](https://github.com/MorpheApp) patches for multiple Apps
 |----------|----------------|-----------|
 | [AMOLED dark mode](#amoled-dark-mode) | Replaces dark background colors in night mode with pure black (#FF000000). |  |
 | [Disable tracking](#disable-tracking) | Disables Tracking and Analytics. |  |
-| [Enable screenshots](#enable-screenshots) | Removes the FLAG_SECURE window flag in DB Navigator to allow taking screenshots and screen recordings. |  |
+| [Enable screenshots](#enable-screenshots) | Allows taking screenshots and screen recordings. |  |
 
 </details>
 
@@ -34,9 +34,9 @@ Custom [Morphe](https://github.com/MorpheApp) patches for multiple Apps
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [Custom icon](#custom-icon) | Changes the app name and optionally replaces the launcher icons of NetMirror. | • App name<br>• Custom icon PNG path (optional) |
-| [Disable ads](#disable-ads) | Blocks popup windows and ad elements in NetMirror. |  |
-| [Disable trackers](#disable-trackers) | Neutralizes analytics, tracking hooks, and device fingerprinting in NetMirror. |  |
+| [Custom icon](#custom-icon) | Changes the app name and optionally replaces the launcher icons. | • App name<br>• Custom icon PNG path (optional) |
+| [Disable ads](#disable-ads) | Blocks ads. |  |
+| [Disable tracking](#disable-trackers) | Disables Tracking and Analytics. |  |
 
 </details>
 
@@ -53,9 +53,9 @@ Custom [Morphe](https://github.com/MorpheApp) patches for multiple Apps
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [Disable ads](#disable-ads) | Blocks Wegfinder promotion banners, TRM marketing banners, and other ads. |  |
+| [Disable ads](#disable-ads) | Blocks Wegfinder ads, marketing banners, and other ads. |  |
 | [Disable tracking](#disable-tracking) | Disables Tracking and Analytics. |  |
-| [Fix map loading](#fix-map-loading) | Switches the map engine from Google Maps to OpenStreetMap (HAFAS tiles) to resolve blank maps on re-signed APKs. |  |
+| [Spoof signature](#spoof-signature) | Spoofs the original package signature so Google Maps and signature checks succeed. |  |
 
 </details>
 

@@ -76,14 +76,3 @@ internal object OebbConnectionOverviewAdFingerprint : Fingerprint(
     parameters = listOf("Landroid/view/ViewGroup;", "I"),
     strings = listOf("oebbAdView", "WAYFINDER_AD_ENABLED"),
 )
-
-internal object OebbMapStyleFingerprint : Fingerprint(
-    parameters = emptyList(),
-    strings = listOf("MAP_STYLE", "GOOGLE"),
-)
-
-internal object OebbOsmTileFingerprint : Fingerprint(
-    returnType = "V",
-    parameters = listOf("Landroid/content/Context;"),
-    strings = listOf("OSM", "MAP_SERVER_OSM", "MAP_SERVER_OSM_RETINA"),
-)
