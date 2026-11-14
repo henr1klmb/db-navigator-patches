@@ -1,3 +1,63 @@
+## [1.2.0-dev.10](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.9...v1.2.0-dev.10) (2026-11-14)
+
+### 🐛 Bug Fixes
+
+* **netmirror:** added MutationObserver to fix ad banner ([90c8a6d](https://github.com/henr1klmb/henr1k-patches/commit/90c8a6d335a655ebd55c6743cc2204513d6e568b))
+
+## [1.2.0-dev.9](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.8...v1.2.0-dev.9) (2026-11-14)
+
+### 🐛 Bug Fixes
+
+* **netmirror:** fixed ad banner at startup still showing ([873531d](https://github.com/henr1klmb/henr1k-patches/commit/873531d5a3b563d634b8cb8a2b41155fcfe7b297))
+
+## [1.2.0-dev.8](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.7...v1.2.0-dev.8) (2026-11-14)
+
+### ✨ New Features
+
+* **reddit:** add patch to hide AutoModerator comments by default ([5671828](https://github.com/henr1klmb/henr1k-patches/commit/567182895d9aba82eb56ead941696eb029394e03))
+
+## [1.2.0-dev.7](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.6...v1.2.0-dev.7) (2026-11-14)
+
+### 🐛 Bug Fixes
+
+* modified signature spoofing ([ab51204](https://github.com/henr1klmb/henr1k-patches/commit/ab51204b342a48179965d12531bbcccbfb21358a))
+
+## [1.2.0-dev.6](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.5...v1.2.0-dev.6) (2026-11-14)
+
+### ✨ New Features
+
+* fixed signature spoofing ([03f6038](https://github.com/henr1klmb/henr1k-patches/commit/03f60385a47d486235b7910dfd90f6a15d131281))
+
+## [1.2.0-dev.5](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.4...v1.2.0-dev.5) (2026-11-14)
+
+### ✨ New Features
+
+* fixed signature spoofing ([204a2ff](https://github.com/henr1klmb/henr1k-patches/commit/204a2ffdf884fd0fb3f46e2adf645ec8e0a9da4f))
+
+## [1.2.0-dev.4](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.3...v1.2.0-dev.4) (2026-11-14)
+
+### ✨ New Features
+
+* add signature spoofing and replace ÖBB map workaround ([ab83f32](https://github.com/henr1klmb/henr1k-patches/commit/ab83f32473168345d52430379a68f691369824d0))
+
+## [1.2.0-dev.3](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.2...v1.2.0-dev.3) (2026-11-13)
+
+### 🐛 Bug Fixes
+
+* possible fix ÖBB Scotty map tile loading and route crash ([af47c73](https://github.com/henr1klmb/henr1k-patches/commit/af47c73c23476ff607f35f4f9d2dd6d7171e22c1))
+
+## [1.2.0-dev.2](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.1...v1.2.0-dev.2) (2026-11-13)
+
+### ✨ New Features
+
+* added app compatibilities, improved ÖBB ad blocking and switch from Google Maps to OpenStreetMap ([f8d0426](https://github.com/henr1klmb/henr1k-patches/commit/f8d04265f89ff73175326fa85a5a1cdc96993c0e))
+
+## [1.2.0-dev.1](https://github.com/henr1klmb/henr1k-patches/compare/v1.1.0...v1.2.0-dev.1) (2026-11-13)
+
+### ✨ New Features
+
+* add ÖBB Scotty and SBB Mobile patches and bundle DB Navigator trackers ([d27fd8a](https://github.com/henr1klmb/henr1k-patches/commit/d27fd8a5d839bcc0923eda4cf44010b6f09dfa3b))
+
 ## [1.1.0](https://github.com/henr1klmb/henr1k-patches/compare/v1.0.1...v1.1.0) (2026-11-13)
 
 ### ✨ New Features

@@ -1,6 +1,5 @@
 package io.github.henr1klmb.patches.dbnavigator
 
-import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.resourcePatch
 import app.morphe.patcher.patch.resourceXml
 
@@ -40,7 +39,7 @@ val amoledDarkModePatch = resourcePatch(
     name = "AMOLED dark mode",
     description = "Replaces dark background colors in night mode with pure black (#FF000000).",
 ) {
-    compatibleWith(Compatibility(packageName = "de.hafas.android.db", name = "DB Navigator"))
+    compatibleWith(DB_NAVIGATOR_COMPATIBILITY)
 
     execute {
         resourceXml("res/values-night/colors.xml").use { colors ->

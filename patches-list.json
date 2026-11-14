@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.1.0",
+  "version": "1.2.0-dev.10",
   "patches": [
     {
       "name": "AMOLED dark mode",
@@ -18,7 +18,7 @@
           "formFactor": "MOBILE",
           "targets": [
             {
-              "version": null,
+              "version": "26.20.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -31,7 +31,7 @@
     },
     {
       "name": "Custom icon",
-      "description": "Changes the app name and optionally replaces the launcher icons of NetMirror.",
+      "description": "Changes the app name and optionally replaces the launcher icon.",
       "default": true,
       "category": null,
       "compatiblePackages": [
@@ -76,122 +76,14 @@
       ]
     },
     {
-      "name": "Disable Adjust tracking",
-      "description": "Prevents the Adjust analytics SDK from initializing in DB Navigator.",
+      "name": "Disable ads",
+      "description": "Blocks popup windows and ad elements.",
       "default": true,
       "category": null,
       "compatiblePackages": [
         {
-          "packageName": "de.hafas.android.db",
-          "name": "DB Navigator",
-          "description": null,
-          "apkFileType": null,
-          "appIconColor": null,
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": null,
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Disable Instana tracking",
-      "description": "Prevents the Instana monitoring and telemetry SDK from initializing in DB Navigator.",
-      "default": true,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "de.hafas.android.db",
-          "name": "DB Navigator",
-          "description": null,
-          "apkFileType": null,
-          "appIconColor": null,
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": null,
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Disable Optimizely A/B testing",
-      "description": "Prevents the Optimizely SDK from initializing in DB Navigator.",
-      "default": true,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "de.hafas.android.db",
-          "name": "DB Navigator",
-          "description": null,
-          "apkFileType": null,
-          "appIconColor": null,
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": null,
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Disable Qualtrics tracking",
-      "description": "Prevents the Qualtrics SDK from initializing in DB Navigator.",
-      "default": true,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "de.hafas.android.db",
-          "name": "DB Navigator",
-          "description": null,
-          "apkFileType": null,
-          "appIconColor": null,
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": null,
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Disable Tealium tracking",
-      "description": "Prevents the Tealium analytics SDK from initializing in DB Navigator.",
-      "default": true,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "de.hafas.android.db",
-          "name": "DB Navigator",
+          "packageName": "app.netmirror.netmirrornew",
+          "name": "NetMirror",
           "description": null,
           "apkFileType": null,
           "appIconColor": null,
@@ -212,13 +104,13 @@
     },
     {
       "name": "Disable ads",
-      "description": "Blocks popup windows and ad elements in NetMirror.",
+      "description": "Blocks Wegfinder ad, marketing banners and others.",
       "default": true,
       "category": null,
       "compatiblePackages": [
         {
-          "packageName": "app.netmirror.netmirrornew",
-          "name": "NetMirror",
+          "packageName": "de.hafas.android.oebb",
+          "name": "ÖBB Scotty",
           "description": null,
           "apkFileType": null,
           "appIconColor": null,
@@ -226,7 +118,34 @@
           "formFactor": "MOBILE",
           "targets": [
             {
-              "version": null,
+              "version": "9.0.5 (72)",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Disable ads",
+      "description": "Disables multiple ad types.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "ch.sbb.mobile.android.b2c",
+          "name": "SBB Mobile",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": null,
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "12.27.0.87.master",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -239,7 +158,7 @@
     },
     {
       "name": "Disable trackers",
-      "description": "Neutralizes analytics, tracking hooks, and device fingerprinting in NetMirror.",
+      "description": "Disables Tracking and Analytics.",
       "default": true,
       "category": null,
       "compatiblePackages": [
@@ -265,8 +184,8 @@
       "options": []
     },
     {
-      "name": "Enable screenshots",
-      "description": "Removes the FLAG_SECURE window flag in DB Navigator to allow taking screenshots and screen recordings.",
+      "name": "Disable tracking",
+      "description": "Disables Tracking and Analytics.",
       "default": true,
       "category": null,
       "compatiblePackages": [
@@ -280,7 +199,169 @@
           "formFactor": "MOBILE",
           "targets": [
             {
-              "version": null,
+              "version": "26.20.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Disable tracking",
+      "description": "Disables Tracking and Analytics.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "de.hafas.android.oebb",
+          "name": "ÖBB Scotty",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": null,
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "9.0.5 (72)",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Disable tracking",
+      "description": "Disables Tracking and Analytics.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "ch.sbb.mobile.android.b2c",
+          "name": "SBB Mobile",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": null,
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "12.27.0.87.master",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Enable screenshots",
+      "description": "Allow taking screenshots and screen recordings.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "de.hafas.android.db",
+          "name": "DB Navigator",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": null,
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.20.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Enable screenshots",
+      "description": "Allows taking screenshots and screen recordings.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "ch.sbb.mobile.android.b2c",
+          "name": "SBB Mobile",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": null,
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "12.27.0.87.master",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide AutoModerator comments",
+      "description": "Automatically collapses comments from AutoModerator in threads by default.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.reddit.frontpage",
+          "name": "Reddit",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": null,
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "2026.46.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Spoof signature",
+      "description": "Spoofs the original package signature so Google Maps and signature checks succeed on re-signed APKs.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "de.hafas.android.oebb",
+          "name": "ÖBB Scotty",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": null,
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "9.0.5 (72)",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,

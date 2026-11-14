@@ -1,6 +1,5 @@
 package io.github.henr1klmb.patches.netmirror
 
-import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.patch
 import app.morphe.patcher.patch.resourceFile
 import app.morphe.patcher.patch.resourceXml
@@ -10,9 +9,9 @@ import java.io.File
 @Suppress("unused")
 val customIconPatch = patch(
     name = "Custom icon",
-    description = "Changes the app name and optionally replaces the launcher icons of NetMirror.",
+    description = "Changes the app name and optionally replaces the launcher icon.",
 ) {
-    compatibleWith(Compatibility(packageName = "app.netmirror.netmirrornew", name = "NetMirror"))
+    compatibleWith(NETMIRROR_COMPATIBILITY)
 
     val customAppName by stringOption(
         key = "customAppName",

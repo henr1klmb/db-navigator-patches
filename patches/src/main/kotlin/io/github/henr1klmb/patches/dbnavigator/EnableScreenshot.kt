@@ -1,15 +1,14 @@
 package io.github.henr1klmb.patches.dbnavigator
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
-import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.patch
 
 @Suppress("unused")
 val enableScreenshotsPatch = patch(
     name = "Enable screenshots",
-    description = "Removes the FLAG_SECURE window flag in DB Navigator to allow taking screenshots and screen recordings.",
+    description = "Allow taking screenshots and screen recordings.",
 ) {
-    compatibleWith(Compatibility(packageName = "de.hafas.android.db", name = "DB Navigator"))
+    compatibleWith(DB_NAVIGATOR_COMPATIBILITY)
 
     execute {
         EnableScreenshotsFingerprint.method.addInstructions(

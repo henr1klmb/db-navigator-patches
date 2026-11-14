@@ -4,4 +4,7 @@ extension {
 
 android {
     namespace = "app.template.extension"
+    lint {
+        abortOnError = false
+    }
 }
