@@ -6,11 +6,16 @@ import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 fun MutableMethod.clearBody() {
     val impl = implementation ?: return
 
-    // Das interne tryBlocks-Feld von MutableMethodImplementation direkt leeren
-    val tryBlocksField = impl.javaClass.getDeclaredField("tryBlocks").apply {
-        isAccessible = true
+    // impl.tryBlocks ist ein Collections.unmodifiableList()-Wrapper um die echte MutableList
+    val unmodifiableTryBlocks = impl.tryBlocks
+    if (unmodifiableTryBlocks.isNotEmpty()) {
+        val innerListField = unmodifiableTryBlocks.javaClass.superclass
+            ?.getDeclaredField("c")
+            ?.apply { isAccessible = true }
+            ?: unmodifiableTryBlocks.javaClass.getDeclaredField("list").apply { isAccessible = true }
+
+        (innerListField.get(unmodifiableTryBlocks) as? MutableList<*>)?.clear()
     }
-    (tryBlocksField.get(impl) as? MutableList<*>)?.clear()
 
     val count = impl.instructions.size
     if (count > 0) {
