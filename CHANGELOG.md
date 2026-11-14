@@ -1,3 +1,9 @@
+## [1.2.0-dev.9](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.8...v1.2.0-dev.9) (2026-11-14)
+
+### 🐛 Bug Fixes
+
+* **netmirror:** fixed ad banner at startup still showing ([873531d](https://github.com/henr1klmb/henr1k-patches/commit/873531d5a3b563d634b8cb8a2b41155fcfe7b297))
+
 ## [1.2.0-dev.8](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.7...v1.2.0-dev.8) (2026-11-14)
 
 ### ✨ New Features
