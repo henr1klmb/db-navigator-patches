@@ -78,12 +78,29 @@ Custom [Morphe](https://github.com/MorpheApp) patches for multiple Apps
 
 </details>
 
+<details open>
+<summary>📦 Reddit&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<br>
+
+**Package name:** `com.reddit.frontpage`
+
+**🎯 Supported versions:**
+
+| 2026.46.0 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Hide AutoModerator comments](#hide-automoderator-comments) | Automatically collapses comments from AutoModerator in threads by default. |  |
+
+</details>
+
 <!-- PATCHES_END -->
 ---
 ## Planned Patches / Work in progress
 - [ ] **Comaprify** (`com.akshat.comparify`) – Disable ads & tracking
 - [ ] **BookMyShow** (`com.bt.bms`) – AMOLED dark mode, disable ads & telemetry, hide Lounge & Live Events tabs
-- [ ] **Reddit** (`com.reddit.frontpage`) – Auto-collapse/hide AutoModerator comments
+- [x] **Reddit** (`com.reddit.frontpage`) – Auto-collapse/hide AutoModerator comments
 - [ ] **mobile.de** (`de.mobile.android.app`) – Disable ads, sponsored listings, tracking & AI features
 - [ ] **ITVX** (`air.ITVMobilePlayer`) - Disable ads, focus on video ads
 - [ ] **Channel 4** (`com.channel4.ondemand`) - Disable ads, focus on video ads

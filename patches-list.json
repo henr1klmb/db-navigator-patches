@@ -319,6 +319,33 @@
       "options": []
     },
     {
+      "name": "Hide AutoModerator comments",
+      "description": "Automatically collapses comments from AutoModerator in threads by default.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.reddit.frontpage",
+          "name": "Reddit",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": null,
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "2026.46.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Spoof signature",
       "description": "Spoofs the original package signature so Google Maps and signature checks succeed on re-signed APKs.",
       "default": true,
