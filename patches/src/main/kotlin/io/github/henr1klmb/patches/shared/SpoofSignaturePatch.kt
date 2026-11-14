@@ -89,7 +89,7 @@ fun executeSpoofSignature(targetPackageName: String = packageMetadata.packageNam
     // Find all classes that contain calls to PackageManager.getPackageInfo
     val classesToPatch = mutableListOf<ClassDef>()
     classDefForEach { classDef ->
-        if (classDef.type == HELPER_CLASS_DESC) return@classDefForEach
+        if (classDef.type.startsWith("Lio/github/henr1klmb/")) return@classDefForEach
 
         val hasCall = classDef.methods.any { method ->
             method.implementation?.instructions?.any { inst ->
@@ -108,6 +108,7 @@ fun executeSpoofSignature(targetPackageName: String = packageMetadata.packageNam
 
     // Redirect invoke-virtual calls to invoke-static on SpoofSignatureHelper
     for (classDef in classesToPatch) {
+        if (classDef.type.startsWith("Lio/github/henr1klmb/")) continue
         val mutableClass = mutableClassDefBy(classDef)
         for (method in mutableClass.methods) {
             val impl = method.implementation ?: continue

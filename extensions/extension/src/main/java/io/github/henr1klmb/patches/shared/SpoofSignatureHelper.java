@@ -13,6 +13,8 @@ import java.lang.reflect.Field;
 @SuppressLint({"SoonBlockedPrivateApi", "PrivateApi", "DiscouragedPrivateApi"})
 public class SpoofSignatureHelper {
 
+    private static final ThreadLocal<Boolean> IS_CALLING = new ThreadLocal<Boolean>();
+
     public static String getAppPackageName() {
         return "";
     }
@@ -26,9 +28,17 @@ public class SpoofSignatureHelper {
         if (pm == null) {
             return null;
         }
-        PackageInfo info = pm.getPackageInfo(packageName, flags);
-        spoofPackageInfo(packageName, (long) flags, info);
-        return info;
+        if (Boolean.TRUE.equals(IS_CALLING.get())) {
+            return pm.getPackageInfo(packageName, flags);
+        }
+        IS_CALLING.set(Boolean.TRUE);
+        try {
+            PackageInfo info = pm.getPackageInfo(packageName, flags);
+            spoofPackageInfo(packageName, (long) flags, info);
+            return info;
+        } finally {
+            IS_CALLING.remove();
+        }
     }
 
     @TargetApi(33)
@@ -38,13 +48,21 @@ public class SpoofSignatureHelper {
         if (pm == null) {
             return null;
         }
-        PackageInfo info = pm.getPackageInfo(packageName, flags);
-        long flagsValue = 0L;
-        if (flags != null) {
-            flagsValue = flags.getValue();
+        if (Boolean.TRUE.equals(IS_CALLING.get())) {
+            return pm.getPackageInfo(packageName, flags);
         }
-        spoofPackageInfo(packageName, flagsValue, info);
-        return info;
+        IS_CALLING.set(Boolean.TRUE);
+        try {
+            PackageInfo info = pm.getPackageInfo(packageName, flags);
+            long flagsValue = 0L;
+            if (flags != null) {
+                flagsValue = flags.getValue();
+            }
+            spoofPackageInfo(packageName, flagsValue, info);
+            return info;
+        } finally {
+            IS_CALLING.remove();
+        }
     }
 
     private static void spoofPackageInfo(String packageName, long flags, PackageInfo info) {
