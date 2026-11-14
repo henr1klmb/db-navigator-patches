@@ -1,3 +1,9 @@
+## [1.2.0-dev.4](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.3...v1.2.0-dev.4) (2026-11-14)
+
+### ✨ New Features
+
+* add signature spoofing and replace ÖBB map workaround ([ab83f32](https://github.com/henr1klmb/henr1k-patches/commit/ab83f32473168345d52430379a68f691369824d0))
+
 ## [1.2.0-dev.3](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.2...v1.2.0-dev.3) (2026-11-13)
 
 ### 🐛 Bug Fixes
