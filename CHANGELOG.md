@@ -1,3 +1,9 @@
+## [1.2.0-dev.3](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.2...v1.2.0-dev.3) (2026-11-13)
+
+### 🐛 Bug Fixes
+
+* possible fix ÖBB Scotty map tile loading and route crash ([af47c73](https://github.com/henr1klmb/henr1k-patches/commit/af47c73c23476ff607f35f4f9d2dd6d7171e22c1))
+
 ## [1.2.0-dev.2](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.1...v1.2.0-dev.2) (2026-11-13)
 
 ### ✨ New Features

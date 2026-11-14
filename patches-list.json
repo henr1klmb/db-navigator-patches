@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.2.0-dev.2",
+  "version": "1.2.0-dev.3",
   "patches": [
     {
       "name": "AMOLED dark mode",
@@ -319,8 +319,8 @@
       "options": []
     },
     {
-      "name": "Spoof signature",
-      "description": "Spoofs the original package signature so Google Maps and signature checks succeed on re-signed APKs.",
+      "name": "Fix map loading",
+      "description": "Switches the map engine from Google Maps to OpenStreetMap and configures the OSM tile server to resolve blank maps on re-signed APKs.",
       "default": true,
       "category": null,
       "compatiblePackages": [
