@@ -1,3 +1,9 @@
+## [1.2.0-dev.10](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.9...v1.2.0-dev.10) (2026-11-14)
+
+### 🐛 Bug Fixes
+
+* **netmirror:** added MutationObserver to fix ad banner ([90c8a6d](https://github.com/henr1klmb/henr1k-patches/commit/90c8a6d335a655ebd55c6743cc2204513d6e568b))
+
 ## [1.2.0-dev.9](https://github.com/henr1klmb/henr1k-patches/compare/v1.2.0-dev.8...v1.2.0-dev.9) (2026-11-14)
 
 ### 🐛 Bug Fixes

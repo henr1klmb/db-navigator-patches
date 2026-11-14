@@ -6,7 +6,7 @@ Custom [Morphe](https://github.com/MorpheApp) patches for multiple Apps
 
 ## Included Patches
 <!-- PATCHES_START -->
-> **[v1.2.0-dev.9](https://github.com/henr1klmb/henr1k-patches/releases/tag/v1.2.0-dev.9)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;13 patches total
+> **[v1.2.0-dev.10](https://github.com/henr1klmb/henr1k-patches/releases/tag/v1.2.0-dev.10)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;13 patches total
 <details open>
 <summary>📦 DB Navigator&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
 <br>
