@@ -33,5 +33,12 @@ val disableAdsPatch = patch(
                 invoke-static {p1}, $HELPER->injectAdBlock(Ljava/lang/Object;)V
             """.trimIndent(),
         )
+
+        MainWebViewClientOnPageFinishedFingerprint.methodOrNull?.addInstructions(
+            0,
+            """
+                invoke-static {p1}, $HELPER->injectAdBlock(Ljava/lang/Object;)V
+            """.trimIndent(),
+        )
     }
 }

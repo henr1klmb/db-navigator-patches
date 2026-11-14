@@ -29,9 +29,14 @@ internal object MainWebViewClientFingerprint : Fingerprint(
     parameters = listOf(WEB_VIEW, STRING),
 )
 
+internal object MainWebViewClientOnPageFinishedFingerprint : Fingerprint(
+    name = "onPageFinished",
+    returnType = "V",
+    parameters = listOf(WEB_VIEW, STRING),
+)
+
 internal object RNDeviceUniqueIdFingerprint : Fingerprint(
     name = "getUniqueIdSync",
     returnType = "Ljava/lang/String;",
     parameters = emptyList(),
 )
-
